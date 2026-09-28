@@ -15,7 +15,7 @@ Como uma forma de incentivo, o aplicativo possuirá um mecanismo de bonificaçã
 - Tests: Contém os arquivos relacionados aos testes do projeto, utilizados para verificar o funcionamento correto das funcionalidades desenvolvidas e identificar possíveis erros.
 - README: É o arquivo principal de documentação apresentado na página inicial do repositório. Nele estão reunidas informações sobre o projeto, como sua descrição, tecnologias utilizadas, estrutura, protótipo, integrantes e status de desenvolvimento.
 ## Protótipo
-Link para o protótipo no Figma: [link]
+Link para o protótipo no Figma: [(https://www.figma.com/make/cpMCs9otk76cYL6v4fx42B/Modern-Minimalist-Landing-Page?fullscreen=1&t=9XdB1iRY6F5VgkQw-1&code-node-id=0-9)]
 ## Integrantes
 - João Vitor - HTML
 - Guilherme Canneva - CSS
