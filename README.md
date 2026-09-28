@@ -6,7 +6,14 @@ Como uma forma de incentivo, o aplicativo possuirá um mecanismo de bonificaçã
 - HTML5, CSS3, JavaScript
 - API's
 ## Estrutura do Projeto
-Explicação da divisão de pastas.
+- Assets: Pasta destinada aos recursos utilizados pelo projeto, como imagens, ícones, fontes e outros elementos visuais necessários para a interface do site.
+- Config: Contém arquivos relacionados às configurações do projeto. Esses arquivos podem armazenar informações necessárias para definir o funcionamento e a configuração de determinados recursos da aplicação.
+- Database: Pasta destinada aos arquivos relacionados ao banco de dados do projeto, incluindo sua estrutura, informações e possíveis configurações necessárias para o armazenamento dos dados dos usuários e da aplicação.
+- Docs: Reúne a documentação do projeto, contendo arquivos e informações importantes para explicar o desenvolvimento, funcionamento e organização da aplicação.
+- Scripts: Armazena scripts auxiliares utilizados durante o desenvolvimento e execução do projeto, facilitando tarefas repetitivas e processos de configuração.
+- Src: É a pasta principal do código-fonte da aplicação. Nela ficam os arquivos responsáveis pelo desenvolvimento do site e suas principais funcionalidades.
+- Tests: Contém os arquivos relacionados aos testes do projeto, utilizados para verificar o funcionamento correto das funcionalidades desenvolvidas e identificar possíveis erros.
+- README: É o arquivo principal de documentação apresentado na página inicial do repositório. Nele estão reunidas informações sobre o projeto, como sua descrição, tecnologias utilizadas, estrutura, protótipo, integrantes e status de desenvolvimento.
 ## Protótipo
 Link para o protótipo no Figma: [link]
 ## Integrantes
