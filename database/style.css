@@ -1,0 +1,73 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* VARIÁVEIS */
+:root {
+    --cor-fundo: #f4f7f5;
+    --cor-botao: #2D6A4F;
+    --cor-topopj:#2D6A4F;
+}
+
+/* TIPOGRAFIA GLOBAL */
+html, body {
+    font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif;
+    color: var(--cor-escuro);
+    background: var(--cor-fundo);
+    line-height: 1.5;
+    font-size: 16px;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR E CABECALHO */
+.cabecalho
+{
+    background: #fff;
+    display: flex;         
+  align-items: center;   
+  gap: 10px;
+.logo {
+
+}
+.foguinho{
+   background-color: rgba(255, 120, 0, 0.3); 
+   display: flex;         
+  align-items: center;   
+  gap: 10px;
+  margin-top: 7px;
+  .letrasf{
+    color: #f36118;
+  }
+  .diasf{
+    color: #ff0000;
+  }
+  .nv{
+    color: var(--cor-topopj);
+  }
+}
+}
+.vpd{
+    display: flex;         
+  align-items: center;   
+  gap: 10px;
+.conta{
+display: flex;         
+  margin-left: 300px; 
+  margin-top: -20px;
+  
+}
+.config{
+display: flex;         
+  margin-left: 300px;
+  margin-top: -20px;
+  
+}
+}
+  
+
+
