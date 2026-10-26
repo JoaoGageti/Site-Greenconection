@@ -1,0 +1,195 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* VARIÁVEIS */
+:root {
+    --cor-fundo: #f4f7f5;
+    --cor-botao: #2D6A4F;
+    --cor-topopj:#2D6A4F;
+}
+/* TIPOGRAFIA GLOBAL */
+html, body {
+    font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif;
+    color: black;
+    background: var(--cor-fundo);
+    line-height: 1.5;
+    font-size: 16px;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+.topo-conteudo
+{
+    display: flex;
+  align-items: center; 
+  gap: 15px;
+  background-color: #fff;
+  padding: 22px;       
+
+}
+.boton{
+    color: var(--cor-botao);
+    font-weight: bold;
+    text-decoration: none;
+}
+.let{
+    font-family: 'fraunces', georgia, serif;
+    font-size: 20px;
+}
+
+
+.saldo
+{
+    width: 370px;
+  height: 170px;
+  background-color: var(--cor-topopj);
+   border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  margin: 0 auto; 
+}
+progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 70%;
+  height: 10px;
+  border-radius: 10px; /* Arredonda a borda externa */
+  overflow: hidden; 
+}
+
+/* Fundo da barra (parte vazia) - Chrome, Safari, Edge */
+progress::-webkit-progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
+.text
+{
+    position: relative;
+    top: 10px;   /* Empurra o texto 20px para baixo */
+    left: 30px; 
+}
+.tsp
+{
+    color: rgba(255, 255, 255, 0.7);
+}
+.titulo-missoes
+{
+  display: flex;           
+  gap: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+  color: rgb(3, 87, 3);
+  font-size: 20px;
+  font-weight:500;
+  text-decoration: none;
+}
+.lista-missoes {
+   display: flex;
+  flex-direction: column; /* Alinha os cards um embaixo do outro */
+  align-items: center;    /* Centraliza os cards horizontalmente */
+  gap: 20px;             /* Cria um espaço entre um card e outro */
+  width: 100%;  
+}
+.missao
+{
+    width: 370px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  
+}
+.card {
+    display: flex;
+  flex-direction: column; /* Organiza os itens em coluna */
+  height: 150px;   
+  padding-left: 55px;
+}
+.missao-icone
+{
+  padding-left: 20px;  
+  
+}
+.let1
+{
+    font-family: 'fraunces', georgia, serif;
+    font-size: 15px;
+}
+.text1
+{
+    color: rgba(3, 59, 29, 0.7);
+}
+.btn-coletar
+{
+    border-radius: 20px;
+  border: none;
+  background-color: var(--cor-botao);  
+  color: #fff;
+  font-family: 'fraunces', georgia, serif;
+  font-size: 15px;
+  cursor: pointer; 
+  padding: 5px;
+}
+@media screen and (min-width: 768px){
+    .saldo
+{
+    width: 80%;
+  height: 170px;
+  background-color: var(--cor-topopj);
+   border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  margin: 0 auto; 
+}
+progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 70%;
+  height: 10px;
+  border-radius: 10px; /* Arredonda a borda externa */
+  overflow: hidden; 
+}
+.lista-missoes {
+   display: flex;
+  flex-direction: column; /* Alinha os cards um embaixo do outro */
+  align-items: center;    /* Centraliza os cards horizontalmente */
+  gap: 20px;             /* Cria um espaço entre um card e outro */
+  width: 100%;  
+}
+.card {
+    display: flex;
+  flex-direction: column; /* Organiza os itens em coluna */
+  height: 150px;   
+  padding-left: 55px;
+}
+.missao
+{
+    width: 80%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  
+}
+.titulo-missoes
+{
+  display: flex;           
+  gap: 10px;
+  margin-left: 150px;
+  margin-top: 20px;
+  color: rgb(3, 87, 3);
+  font-size: 20px;
+  font-weight:500;
+  text-decoration: none;
+}
+    
+}

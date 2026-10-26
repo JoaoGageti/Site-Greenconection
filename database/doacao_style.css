@@ -1,0 +1,260 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* VARIÁVEIS */
+:root {
+    --cor-fundo: #f4f7f5;
+    --cor-botao: #2D6A4F;
+    --cor-topopj:#2D6A4F;
+}
+/* TIPOGRAFIA GLOBAL */
+html, body {
+    font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif;
+    color: black;
+    background: var(--cor-fundo);
+    line-height: 1.5;
+    font-size: 16px;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+.topo-conteudo
+{
+    display: flex;
+  align-items: center; 
+  gap: 15px;
+  background-color: #fff;
+  padding:22px;       
+
+}
+.boton{
+    color: var(--cor-botao);
+    font-weight: bold;
+    text-decoration: none;
+}
+.let{
+    font-family: 'fraunces', georgia, serif;
+    font-size: 20px;
+}
+.saldo
+{
+    width: 400px;
+  height: 230px;
+  background-color: #fff;
+   border-radius: 20px;
+  font-size: 20px;
+  margin: 0 auto; 
+}
+.tsp
+{
+    color: rgba(2, 70, 24, 0.7);
+    margin-left: 30px;
+    font-weight: 600; 
+}
+.valores
+{
+  display: grid;
+  /* Cria exatamente 3 colunas iguais. O 4º e 5º botão vão para baixo sozinhos */
+  grid-template-columns: repeat(3, 1fr); 
+  
+  gap: 10px; /* Espaço entre os botões (tanto nas laterais quanto entre as linhas) */
+  max-width: 500px; 
+}
+.valores input[type="radio"] {
+  display: none;
+}
+.valores label {
+  padding: 3px 9px;
+  width: 100px; 
+  background-color: #f0f0f0;
+  color: black;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'fraunces', georgia, serif;
+  font-size: 15px;
+  user-select: none; /* Evita selecionar o texto ao clicar */
+  margin-left: 10px;
+}
+.valores label:hover {
+  background-color: var(--cor-fundo);
+  border-color: var(--cor-topopj);
+}
+.valores input[type="radio"]:checked + label {
+  background-color: var(--cor-topopj);
+  color: white;
+  border-color: var(--cor-topopj);
+}
+.campo1
+{
+    padding: 12px;
+    width: 380px;
+  height: 50px;
+  background-color:  rgba(5, 174, 53, 0.3);
+  border-radius: 20px;
+  border: none;
+  margin-left: 10px;
+  font-size: 17px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold; 
+}
+.titulo-missoes{
+    color: rgba(2, 70, 24, 0.7);
+    margin-left: 20px;
+    font-weight: 500; 
+}
+.cardi
+{
+  width: 100%;
+  max-width: 400px; 
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 32px; 
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+.card-abas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px; /* Mais espaço entre os botões */
+  position: relative;
+}
+.card-abas .card {
+  display: contents;
+}
+.let1 {
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px; 
+  background-color: #f3f4f6;
+  color: #4b5563;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  list-style: none;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+.let1:hover {
+  background-color: #e5e7eb;
+}
+.card-abas .card[open] .let1 {
+  background-color: var(--cor-topopj); 
+  color: var(--cor-fundo)
+}
+.missao-rodape {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 18px; 
+  padding: 24px 0 0 0;
+  animation: fadeIn 0.3s ease;
+}
+.missao-rodape .linha-dupla {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+.missao-rodape .linha-dupla label {
+  flex: 1; 
+}
+
+.card-abas .card:not([open]) .missao-rodape {
+  display: none;
+}
+.text1 {
+  font-size: 1rem;
+  color: #374151;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%; 
+}
+
+.campo {
+  width: 100%;
+  padding: 14px; 
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background-color: #f9fafb;
+  transition: all 0.2s ease;
+}
+.campo:focus {
+  outline: none;
+  border-color: var(--cor-topopj);
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+.btn-coletar {
+  width: 100%;
+  padding: 16px;
+  background-color: var(--cor-botao);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+.btn-coletar:hover {
+  background-color: var(--cor-topopj);
+}
+@media screen and (min-width: 990px){
+    .saldo
+{
+    width: 60%;
+  height: 230px;
+  background-color: #fff;
+   border-radius: 20px;
+  font-size: 20px;
+  margin: 0 auto; 
+}
+.cardi
+{
+  width: 100%;
+  max-width: 60%; 
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 32px; 
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+.campo1
+{
+    padding: 12px;
+    width: 97%;
+  height: 50px;
+  background-color:  rgba(5, 174, 53, 0.3);
+  border-radius: 20px;
+  border: none;
+  margin-left: 10px;
+  font-size: 17px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold; 
+}
+.valores
+{
+  display: grid;
+  /* Cria exatamente 3 colunas iguais. O 4º e 5º botão vão para baixo sozinhos */
+  grid-template-columns: repeat(5, 1fr); 
+  
+  gap: 10px; /* Espaço entre os botões (tanto nas laterais quanto entre as linhas) */
+  max-width: 500px; 
+}
+}
