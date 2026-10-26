@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonificação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="topo">
+    <div class="topo-conteudo">
+      <a class='boton' href="#" id="btn-voltar">← Voltar </a>
+      <p>|</p>
+      <h1 class="let">Central de Bônus</h1>
+    </div>
+    <hr>
+  </header>
+  <br>
+   <main>
+    <section class="saldo">
+      <nav class="text">
+    <p class="tsp"><small>SEU SALDO DE BÔNUS</small></p>
+    <div>
+        <div class="let" id="saldo-valor">R$ 0,00</div>
+        <span class='tsp' id="contador-missoes">2/5 missões</span>
+    </div>
+     <div class="progresso-geral">
+        <div class="linha-progresso">
+          <span class="tsp">Progresso missões</span>
+          <span class="tsp" id="progresso-geral-texto">40%</span>
+        </div>
+        <progress id="progresso-geral-barra" value="40" max="100"></progress>
+      </div>
+      </nav>
+    </section>
+
+    <h2 class="titulo-missoes">&#8212 Missões Disponíveis</h2>
+    <ul class="lista-missoes" id="lista-missoes">
+
+        <li class="missao" data-id="ler-projetos" data-valor="5" data-xp="50" data-progresso="100" data-status="completa">
+        <div class="missao-icone">📖</div>
+        <div class='card'>
+        <div>
+          <h3 class="let1">Leia sobre 2 projetos</h3>
+          <p class="text1">Acesse a página de detalhes de ao menos dois projetos.</p>
+        </div>
+        <div class="recompensa"><strong>R$ 5,00 </strong> <span> + 50 XP</span></div>
+        <div class="missao-rodape">
+          <progress value="100" max="100"></progress>
+          <span class="percentual">100%</span>
+          <button class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
+        </div>
+      </div>
+      </li>
+
+      <li class="missao" data-id="ler-projetos" data-valor="8" data-xp="80" data-progresso="100" data-status="completa">
+        <div class="missao-icone">🔗</div>
+        <div class='card'>
+        <div>
+          <h3 class="let1">Compartilhe uma notícia</h3>
+          <p class="text1">Compartilhe qualquer notícia da fundação nas redes sociais.</p>
+        </div>
+        <div class="recompensa"><strong>R$ 8,00 </strong> <span> + 80 XP</span></div>
+        <div class="missao-rodape">
+          <progress value="100" max="100"></progress>
+          <span class="percentual">100%</span>
+          <button class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
+        </div>
+        </div>
+      </li>
+
+      <li class="missao" data-id="ler-projetos" data-valor="15" data-xp="150" data-progresso="0" data-status="pendente">
+        <div class="missao-icone">⚡</div>
+        <div class='card'>
+        <div>
+       <h3 class="let1">Faça sua contribuição</h3>
+          <p class="text1">Realize uma doação de qualquer valor para um dos projetos ativos.</p>
+        </div>
+        <div class="recompensa"><strong>R$ 15,00 </strong> <span> + 150 XP</span></div>
+        <div class="missao-rodape">
+          <progress value="0" max="100"></progress>
+          <span class="percentual">0%</span>
+          <button class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
+        </div>
+      </div>
+      </li>
+
+      <li class="missao" data-id="ler-projetos" data-valor="3" data-xp="30" data-progresso="60" data-status="pendente">
+        <div class="missao-icone">👤</div>
+        <div class='card'>
+        <div>
+        <h3 class="let1">Complete seu perfil</h3>
+          <p class="text1">Preencha 100% das informações do seu perfil de usuário.</p>
+        </div>
+        <div class="recompensa"><strong>R$ 3,00 </strong> <span> + 30 XP</span></div>
+        <div class="missao-rodape">
+          <progress value="60" max="100"></progress>
+          <span class="percentual">60%</span>
+          <button class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
+        </div>
+        </div>
+      </li>
+
+      <li class="missao" data-id="ler-projetos" data-valor="20" data-xp="200" data-progresso="0" data-status="pendente">
+        <div class="missao-icone">🤝</div>
+        <div class='card'>
+        <div>
+        <h3 class="let1">Indique um amigo</h3>
+          <p class="text1">Convide um amigo para a plataforma e ele deve se cadastrar.</p>
+        </div>
+        <div class="recompensa"><strong>R$ 20,00 </strong> <span> + 200 XP</span></div>
+        <div class="missao-rodape">
+          <progress value="0" max="100"></progress>
+          <span class="percentual">0%</span>
+          <button class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
+        </div>
+        </div>
+      </li>
+    </ul>
+
+   </main>
+    
+</body>
+</html>
