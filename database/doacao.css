@@ -1,0 +1,143 @@
+* { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #f6f8f7;
+      color: #18231e;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Topo */
+    .topo {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      max-width: 650px;
+      margin: 0 auto;
+      padding: 18px 16px;
+      border-bottom: 1px solid #dde6e1;
+    }
+    .voltar { color: #2c6a50; text-decoration: none; font-weight: bold; }
+    .divisor { width: 1px; height: 20px; background: #dde6e1; }
+    .topo h1 { font-family: Georgia, serif; font-size: 18px; margin: 0; }
+
+    /* Cartões */
+    .conteudo { max-width: 650px; margin: 0 auto; padding: 24px 16px; }
+    .card {
+      background: #fff;
+      border: 1px solid #dde6e1;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 30px;
+    }
+    .titulo {
+      margin: 0 0 18px;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #5d7468;
+    }
+
+    /* Esconde as bolinhas dos botões de rádio */
+    input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    }
+
+    /* Botões de valor */
+    .valores { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+    .valores label {
+      padding: 10px 18px;
+      border: 1px solid #dde6e1;
+      border-radius: 12px;
+      background: #f6f8f7;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .valores label:hover { border-color: #2c6a50; }
+    .valores input:checked + label {
+      background: #2c6a50;
+      border-color: #2c6a50;
+      color: #fff;
+    }
+
+    /* Campos de texto */
+    .campo {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #dde6e1;
+      border-radius: 12px;
+      background: #eaf3ee;
+      font-size: 15px;
+      margin-top: 6px;
+    }
+    .campo:focus { outline: none; border-color: #2c6a50; }
+
+    /* Botões de método de pagamento */
+    .metodos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .metodos label {
+      padding: 18px 8px;
+      text-align: center;
+      border: 1px solid #dde6e1;
+      border-radius: 12px;
+      background: #f6f8f7;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .metodos label:hover { border-color: #2c6a50; }
+    #pix:checked ~ .metodos label[for="pix"],
+    #cartao:checked ~ .metodos label[for="cartao"],
+    #boleto:checked ~ .metodos label[for="boleto"] {
+      background: #2c6a50;
+      border-color: #2c6a50;
+      color: #fff;
+    }
+
+    /* Mostra só o painel do método escolhido */
+    .painel { display: none; margin-top: 24px; }
+    #pix:checked ~ .painel-pix,
+    #cartao:checked ~ .painel-cartao,
+    #boleto:checked ~ .painel-boleto { display: block; }
+
+    /* Pix */
+    .qrcode {
+      width: 190px;
+      height: 190px;
+      margin: 0 auto 14px;
+      padding: 12px;
+      border: 1px solid #dde6e1;
+      border-radius: 14px;
+      background: #f3f3f3;
+    }
+    .qrcode img { width: 100%; height: 100%; }
+    .centro { text-align: center; margin: 4px 0; }
+    .sub { color: #5d7468; font-size: 14px; }
+    .codigo { font-family: monospace; font-size: 12px; color: #5d7468; margin-top: 16px; }
+
+    /* Formulários */
+    .rotulo { display: block; margin-bottom: 14px; font-size: 14px; color: #5d7468; }
+    .linha { display: flex; gap: 14px; }
+    .linha .rotulo { flex: 1; }
+
+    /* Botão principal */
+    .botao {
+      width: 100%;
+      margin-top: 14px;
+      padding: 15px;
+      border: none;
+      border-radius: 12px;
+      background: #2c6a50;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .botao:hover { background: #245a43; }
+
+    /* Celular */
+    @media (max-width: 500px) {
+      .metodos label { padding: 14px 4px; font-size: 14px; }
+      .linha { flex-direction: column; gap: 0; }
+    }
