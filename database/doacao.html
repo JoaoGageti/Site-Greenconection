@@ -1,105 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fazer uma contribuição</title>
-  <link rel="stylesheet" href="doacao.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazer uma contribuição</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="topo">
-    <a id="voltar" href="green.html" class="voltar">← Voltar</a>
-    <span class="divisor"></span>
-    <h1>Fazer uma contribuição</h1>
+    <header class="topo">
+    <div class="topo-conteudo">
+      <a class="boton" href="green.html" id="btn-voltar">← Voltar </a>
+      <p>|</p>
+      <h1 class="let">Fazer uma contribuição</h1>
+    </div>
+    <hr>
   </header>
-
-  <main class="conteudo">
+  <br>
+  <main>
 
     <!-- VALOR -->
-    <section class="card">
-      <p class="titulo">Valor da contribuição</p>
-
-      <div id="valores" class="valores">
-        <input type="radio" name="valor" id="v10" value="10"><label for="v10">R$ 10</label>
-        <input type="radio" name="valor" id="v25" value="25"><label for="v25">R$ 25</label>
-        <input type="radio" name="valor" id="v50" value="50"><label for="v50">R$ 50</label>
-        <input type="radio" name="valor" id="v100" value="100"><label for="v100">R$ 100</label>
-        <input type="radio" name="valor" id="v250" value="250"><label for="v250">R$ 250</label>
-      </div>
-
-      <input id="outrovalor" type="number" class="campo" placeholder="R$ Outro valor" min="5" step="0.01">
-    </section>
-
-    <!-- PAGAMENTO -->
-    <section class="card">
-      <p class="titulo">Método de pagamento</p>
-
-      <input type="radio" name="metodo" id="pix" checked>
-      <input type="radio" name="metodo" id="cartao">
-      <input type="radio" name="metodo" id="boleto">
-
-      <div class="metodos">
-        <label for="pix">Pix</label>
-        <label for="cartao">Cartão</label>
-        <label for="boleto">Boleto</label>
-      </div>
-
-      <!-- PIX -->
-      <div id="painelpix" class="painel painel-pix">
-        <div id="qrcode" class="qrcode">
-          <img src="../assets/QRCodeteste.jpg" alt="">
+    <section class="saldo">
+      <nav class="text">
+        <p class="tsp"><small>VALOR DA CONTRIBUIÇÃO</small></p>
+        <br>
+        <div class="valores" id="valores">
+          <input type="radio" name="valor" id="v10" value="10"><label for="v10">R$10</label>
+          <input type="radio" name="valor" id="v25" value="25"><label for="v25">R$25</label>
+          <input type="radio" name="valor" id="v50" value="50" checked><label for="v50">R$50</label>
+          <input type="radio" name="valor" id="v100" value="100"><label for="v100">R$100</label>
+          <input type="radio" name="valor" id="v250" value="250"><label for="v250">R$250</label>
         </div>
-        <p class="centro"><strong>Escaneie o QR Code</strong></p>
-        <p class="centro sub">Ou copie o código abaixo para pagar via Pix copia e cola</p>
-        <input type="text" class="campo codigo" readonly
+        <br>
+        <input id="outrovalor" type="number" class="campo1" placeholder="R$ Outro valor" min="5" step="0.01">
+      </nav>
+    </section>
+    <br>
+    <nav class="cardi">
+    <h2 class="titulo-missoes"> Método de pagamento</h2>
+    <br>
+    <div class="card-abas">
+    <!-- PIX -->
+    <details class="card" name="metodo" open>
+      <summary class="let1">Pix</summary>
+      <div class="missao-rodape" id="painelpix">
+        <p class="text1">Escaneie o QR Code ou copie o código abaixo (Pix copia e cola).</p>
+        <img src="../assets/QRCodeteste.jpg" alt="QR Code Pix" width="160">
+        <input type="text" class="campo" readonly
           value="00020126580014BR.GOV.BCB.PIX0136a2f9c3b4-1e2d-4567-89ab-cdef0123">
-        <button id="bttpix" type="button" class="botao">Já realizei o pagamento</button>
+        <button id="bttpix" class="btn-coletar" type="button">Já realizei o pagamento</button>
         <p id="infopagamentopix"></p>
       </div>
+    </details>
 
-      <!-- CARTÃO -->
-      <form class="painel painel-cartao">
-        <label class="rotulo">Nome completo
+    <!-- CARTÃO -->
+    <details class="card" name="metodo">
+      <summary class="let1">Cartão</summary>
+      <form class="missao-rodape">
+        <label class="text1">Nome completo
           <input id="nomecartao" type="text" class="campo" placeholder="Como está no cartão" required>
         </label>
-        <label class="rotulo">Número do cartão
+        <label class="text1">Número do cartão
           <input id="numerocartao" type="text" class="campo" placeholder="0000 0000 0000 0000"
             inputmode="numeric" pattern="[0-9 ]{13,19}" maxlength="19" required>
         </label>
-        <div class="linha">
-          <label class="rotulo">Validade
-            <input id="validadecartao" type="text" class="campo" placeholder="MM/AA"
-              pattern="(0[1-9]|1[0-2])/[0-9]{2}" maxlength="5" required>
-          </label>
-          <label class="rotulo">CVV
-            <input id="cvvcartao" type="text" class="campo" placeholder="123"
-              inputmode="numeric" pattern="[0-9]{3,4}" maxlength="4" required>
-          </label>
-        </div>
-        <button id="bttcartao" type="button" class="botao" disabled>Contribuir</button>
+        <label class="text1">Validade
+          <input id="validadecartao" type="text" class="text1" placeholder="MM/AA"
+            pattern="(0[1-9]|1[0-2])/[0-9]{2}" maxlength="5" required>
+        </label>
+        <label class="text1">CVV
+          <input id="cvvcartao" type="text" class="campo" placeholder="123"
+            inputmode="numeric" pattern="[0-9]{3,4}" maxlength="4" required>
+        </label>
+        <button id="bttcartao" class="btn-coletar" type="button" disabled>Contribuir</button>
         <ul id="listaerroscartao"></ul>
         <p id="infopagamentocartao"></p>
       </form>
+    </details>
 
-      <!-- BOLETO -->
-      <form class="painel painel-boleto">
-        <label class="rotulo">Nome completo
+    <!-- BOLETO -->
+    <details class="card" name="metodo">
+      <summary class="let1">Boleto</summary>
+      <form class="missao-rodape">
+        <label class="text1">Nome completo
           <input id="nomeboleto" type="text" class="campo" placeholder="Seu nome completo" required>
         </label>
-        <label class="rotulo">CPF
+        <label class="text1">CPF
           <input id="CPFboleto" type="text" class="campo" placeholder="000.000.000-00"
             pattern="[0-9]{3}\.?[0-9]{3}\.?[0-9]{3}-?[0-9]{2}" maxlength="14" required>
         </label>
-        <label class="rotulo">E-mail
+        <label class="text1">E-mail
           <input id="emailboleto" type="email" class="campo" placeholder="voce@email.com" required>
         </label>
-        <p class="sub">O boleto vence em 3 dias úteis e é enviado para o seu e-mail.</p>
-        <button id="bttboleto" type="button" class="botao" disabled>Gerar boleto</button>
+        <p class="text1">O boleto vence em 3 dias úteis e é enviado para o seu e-mail.</p>
+        <button id="bttboleto" class="btn-coletar" type="button" disabled>Gerar boleto</button>
         <ul id="listaerrosboleto"></ul>
         <p id="infopagamentoboleto"></p>
       </form>
-    </section>
+    </details>
+    </div>
+    </nav>
 
   </main>
 
