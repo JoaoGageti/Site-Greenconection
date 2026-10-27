@@ -1,0 +1,143 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* VARIÁVEIS */
+:root {
+    --cor-fundo: #f4f7f5;
+    --cor-botao: #2D6A4F;
+    --cor-topopj:#2D6A4F;
+}
+/* TIPOGRAFIA GLOBAL */
+html, body {
+    font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif;
+    color: black;
+    background: var(--cor-fundo);
+    line-height: 1.5;
+    font-size: 16px;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+.tp{
+      display: flex;
+  align-items: center; 
+  gap: 15px;
+  background-color: #fff;
+  padding: 22px;       
+
+}
+.voltar{
+    color: var(--cor-botao);
+    font-weight: bold;
+    text-decoration: none;
+}
+.let{
+    color: rgba(36, 86, 59, 0.7);
+    font-size: 18px;
+}
+.categoria{
+    color: var(--cor-topopj);
+    font-size: 18px;
+    margin-left:10px ;
+}
+.text{
+    font-family: 'fraunces', georgia, serif;
+    font-size: 30px;
+    margin-left: 20px;
+}
+img {
+    max-width: 90%; /* A imagem nunca será maior que o espaço disponível */
+    height: auto;    /* Mantém a proporção original, evitando distorções */
+    margin-left: 21px;
+    border-radius: 12px;
+}
+.status
+{
+    width: 150px;
+  height: 150px;
+  background-color: lightgoldenrodyellow;
+  border-radius: 20px;
+  border: 2px solid #f6ba38; 
+  padding: 3px;
+  color: rgb(248, 102, 5);
+  margin-left: 130px;
+}
+.numeros{
+   display: grid;
+  /* Força a criação de exatamente 2 colunas de tamanhos iguais */
+  grid-template-columns: repeat(2, 1fr);
+  /* Espaçamento de 20px entre os cards */
+  gap: 20px; 
+  padding: 20px;
+  max-width: 800px; /* Opcional: limita a largura máxima do bloco de cards */
+  margin: 0 auto; 
+}
+.numero{
+background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  /* Remove o "width: 300px" fixo do exemplo anterior para o grid controlar a largura */
+  width: 100%; 
+  padding: 20px;
+  text-align: center;
+}
+.texto
+{
+padding-left: 15px;  /* Afasta da borda esquerda */
+  padding-right: 15px;
+  color:rgb(50, 48, 48);
+}
+@media screen and (min-width: 768px){
+    .status
+{
+  width: 150px;
+  height: 150px;
+  background-color: lightgoldenrodyellow;
+  border-radius: 20px;
+  border: 2px solid #f6ba38; 
+  padding: 3px;
+  color: rgb(248, 102, 5);
+  margin-left: 60%;
+}
+img {
+   width: 78%;       /* Força a imagem a ocupar 100% da largura */
+  height: 500px;     /* Defina a altura que você desejar */
+  object-fit: cover;
+  margin-left: 10%;
+    
+}
+.text{
+    font-family: 'fraunces', georgia, serif;
+    font-size: 30px;
+    margin-left: 10%;
+}
+.categoria{
+    color: var(--cor-topopj);
+    font-size: 18px;
+    margin-left:10% ;
+}
+.numeros{
+   display: grid;
+  /* Força a criação de exatamente 2 colunas de tamanhos iguais */
+  grid-template-columns: repeat(4, 1fr);
+  /* Espaçamento de 20px entre os cards */
+  gap: 20px; 
+  padding: 20px;
+  max-width: 1170px; /* Opcional: limita a largura máxima do bloco de cards */
+  margin: 0 auto; 
+}
+.texto
+{
+max-width: 700px;    /* 1. Impede que o texto ocupe a tela inteira em monitores grandes */
+  margin-left: 10%;      /* 2. Centraliza o bloco do texto na tela */
+  padding-left: 15px;  /* Mantém o seu respiro na esquerda */
+  padding-right: 15px; 
+}
+
+}
