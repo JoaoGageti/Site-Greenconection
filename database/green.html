@@ -8,70 +8,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="principal.css">
 </head>
 <body>
 
 <header class="cabecalho">
-    <h1 class="logo">🍃Green Connection</h1>
-    <nav>
-        <ul>
-            <div class="foguinho">
-            <p class="letrasf">🌲STREAK:</p><p class="diasf"> 5 dias</p><p class="nv">Nv.2</p> <p>500 XP /1.000</p>
-            </div> 
-            <div class="vpd">
-            <button class="conta"><a href="#">Criar Conta</a></button>
-            <button class="config"><a href="#">⚙️</a></button>
-            </div>
-        </ul>
+       <h1 class="logo">🍃Green Connection</h1> 
+    <nav class="infos">
+         <button class="conta"><a href="#">Criar Conta</a></button>
+         <button class="config"><a href="#">⚙️</a></button>
     </nav>
 </header>
-
 <main class="container">
-
-    <p class="subname">Green Connection</p>
-
+    
     <section class="realizacoes">
-        <div class="coluna-projetos">
-            <p class="ptitulo"><span class="linha">&#8212 Realizações</p></span>
-            <h2 class="pjc">Projetos já criados</h2>
-
+            <div class="alinha">
+                <p class="subname">GREEN CONNECTION</p>
+                <p class="ptitulo">&#8212 REALIZAÇÕES</p>
+                <h2 class="pjc">Projetos já criados</h2>
+            </div>
             <div class="cards">
-                <article class="card1">
-                    <div class="card-img img1">
+                <article class="card">
                          <img src="https://images.unsplash.com/photo-1516730670158-8c52cb740fcf?w=700&h=420&fit=crop&auto=format">
-                         <div class="texto-sobreposto">
                             <p class="tag">Infraestrutura</p>
-                            </div>
-                            <div class="texto-sobreposto1">
-                            <span class="ano">2024</span>
-                            </div>
-                    </div>
+                            <p class="ano">2024</p>
                     <div class="card-corpo1">
                         <h3 class="titulo-card">Centro Comunitário Vila Nova</h3>
                         <p>Revitalização de área urbana com foco em educação e cultura para jovens da comunidade local.</p>
-                        <hr>
+                        <hr class="traço">
                         <div class="card-status">
                             <span class="dot concluido"></span>
                             🟢Status: <strong class="st-concluido">Concluído</strong>
                         </div>
                     </div>
                 </article>
-
-                <article class="card2">
-                    <div class="card-img img2">
+                <article class="card">
                         <img src="https://images.unsplash.com/photo-1483366774565-c783b9f70e2c?w=700&h=420&fit=crop&auto=format">
-                        <div class="texto-sobreposto">
-                        <span class="tag">Habitação</span>
-                        </div>
-                        <div class="texto-sobreposto2">
-                            <span class="ano">2025</span>
-                        </div>
-                    </div>
-                    <div class="card-corpo2">
+                        <p class="tag">Habitação</p>
+                        <p class="ano">2025</p>
+                    <div class="card-corpo1">
                         <h3 class="titulo-card">Habitação Sustentável</h3>
                         <p>Construção de 40 unidades habitacionais com tecnologia verde e baixo impacto ambiental.</p>
-                        <hr>
+                        <hr class="traço">
                         <div class="card-status">
                             <span class="dot andamento"></span>
                             🟡Status: <strong class="st-andamento">Em andamento</strong>
@@ -80,9 +58,9 @@
                 </article>
             </div>
         </div>
-
-        <aside class="coluna-apoio">
-            <button href="#" class="bonificacao" id="btn-bonificacao"><span>Recolher minha bonificação</span></button>
+    </section>
+    <section class="coluna-apoio">
+            <button class="bonificacao" ><a href="bonificacao.html"><span>Recolher minha bonificação</span></a></button>
             <div class="bon2">
                 <br>
             <p class="seta">&#8595;</p>
@@ -92,26 +70,23 @@
             <p class="apoie">Apoie a instituição</p>
             </div>
             
-            <button href="#" class="apoiar">Apoiar</button>
+            <button class="apoiar"><a href="doacao.html">Apoiar</a></button>
             <div class="bon1">
             <p class="nota">Doações dedutíveis no IR · Qualquer valor</p>
             </div>
-        </aside>
     </section>
 
-    <button href="#" class="Tfa">📖 Tarefas e Aulas</button>
+    <!--<button href="#" class="Tfa">📖 Tarefas e Aulas</button> -->
 
     <section class="noticias">
-        <p class="ptitulo"><span class="linha">&#8212 Atualidades</p></span>
-        <div class="noticias-topo">
+        <div class="alinha">
+            <p class="ptitulo">&#8212 ATUALIDADES</p></span>
             <h2>Notícias</h2>
             <a href="#" class="allnt">Ver todas as notícias &#8594;</a>
         </div>
-
-        <div class="cards cards-3">
-
+        <div class="cards">
             <!-- Notícia 1 -->
-            <article class="card" id="not1">
+            <article class="card-not"  id="not1">
                 <div class="card-img" style="background-image: url('img/noticia1.jpg')">
                     <span class="tag">Clima</span>
                     <span class="ano">15 out 2026</span>
@@ -119,12 +94,12 @@
                 <div class="card-corpo">
                     <h3>Título da notícia sobre o clima</h3>
                     <p>Resumo curto sobre o que a matéria aborda.</p>
-                    <a href="#" class="lernt" target="_blank">Ler matéria &#8594;</a>
+                    <a href="noticia1.html" class="lernt" target="_blank">Ler matéria &#8594;</a>
                 </div>
             </article>
 
             <!-- Notícia 2 -->
-            <article class="card" id="not2">
+            <article class="card-not"  id="not2">
                 <div class="card-img" style="background-image: url('img/noticia2.jpg')">
                     <span class="tag">Biodiversidade</span>
                     <span class="ano">12 out 2026</span>
@@ -132,12 +107,12 @@
                 <div class="card-corpo">
                     <h3>Título da notícia sobre biodiversidade</h3>
                     <p>Resumo curto sobre o que a matéria aborda.</p>
-                    <a href="#" class="lernt" target="_blank">Ler matéria &#8594;</a>
+                    <a href="noticia2.html" class="lernt" target="_blank">Ler matéria &#8594;</a>
                 </div>
             </article>
 
             <!-- Notícia 3 -->
-            <article class="card" id="not3">
+            <article class="card-not"  id="not3">
                 <div class="card-img" style="background-image: url('img/noticia3.jpg')">
                     <span class="tag">Reciclagem</span>
                     <span class="ano">10 out 2026</span>
@@ -150,7 +125,7 @@
             </article>
 
             <!-- Notícia 4 -->
-            <article class="card" id="not4" hidden>
+            <article class="card-not"  id="not4" hidden>
                 <div class="card-img" style="background-image: url('img/noticia4.jpg')">
                     <span class="tag">Água</span>
                     <span class="ano">08 out 2026</span>
@@ -163,7 +138,7 @@
             </article>
 
             <!-- Notícia 5 -->
-            <article class="card" id="not5" hidden>
+            <article class="card-not"  id="not5" hidden>
                 <div class="card-img" style="background-image: url('img/noticia5.jpg')">
                     <span class="tag">Energia</span>
                     <span class="ano">05 out 2026</span>
@@ -176,7 +151,7 @@
             </article>
 
             <!--Notícia 6 -->
-            <article class="card" id="not6" hidden>
+            <article class="card-not" id="not6" hidden>
                 <div class="card-img" style="background-image: url('img/noticia6.jpg')">
                     <span class="tag">Florestas</span>
                     <span class="ano">02 out 2026</span>
