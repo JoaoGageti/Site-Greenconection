@@ -1,0 +1,67 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* VARIÁVEIS */
+:root {
+    --cor-fundo: #f4f7f5;
+    --cor-botao: #2D6A4F;
+    --cor-topopj:#2D6A4F;
+}
+/* TIPOGRAFIA GLOBAL */
+html, body {
+    font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif;
+    color: black;
+    background: #fff;
+    line-height: 1.5;
+    font-size: 16px;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+.topo-conteudo
+{
+    display: flex;
+  align-items: center; 
+  gap: 15px;
+  background-color: #fff;
+  padding: 22px;       
+
+}
+.boton{
+    color: var(--cor-botao);
+    font-weight: bold;
+    text-decoration: none;
+}
+.let{
+    font-family: 'fraunces', georgia, serif;
+    font-size: 20px;
+}
+.tit2{
+    font-family: 'fraunces', georgia, serif;
+    font-size: 18px;
+    margin-left: 15px;
+}
+.p1{
+    font-size: 15px;
+    color:rgb(68, 68, 68);
+    
+    text-align: center;
+
+}
+.p2{
+    font-size: 12px;
+    color: green;
+    margin-left: 15px;
+}
+@media screen and (min-width: 768px){
+    .p1{
+    font-size: 15px;
+    color:rgb(68, 68, 68);
+    text-align: left;
+    margin-left: 15px;
+
+}
+}
