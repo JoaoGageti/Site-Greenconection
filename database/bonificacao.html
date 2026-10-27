@@ -25,15 +25,15 @@
       <nav class="text">
     <p class="tsp"><small>SEU SALDO DE BÔNUS</small></p>
     <div>
-        <div class="let" id="saldo-valor">R$ 0,00</div>
-        <span class='tsp' id="contador-missoes">2/5 missões</span>
+        <div class="let" id="saldo-valor">R$ <span id="saldo" >0,00</span></div>
+        <span class='tsp' id="contador-missoes">0/5 missões</span>
     </div>
      <div class="progresso-geral">
         <div class="linha-progresso">
           <span class="tsp">Progresso missões</span>
-          <span class="tsp" id="progresso-geral-texto">40%</span>
+          <span class="tsp" id="progresso-geral-texto">0%</span>
         </div>
-        <progress id="progresso-geral-barra" value="40" max="100"></progress>
+        <progress id="progresso-geral-barra" value="0" max="100"></progress>
       </div>
       </nav>
     </section>
@@ -41,7 +41,7 @@
     <h2 class="titulo-missoes">&#8212 Missões Disponíveis</h2>
     <ul class="lista-missoes" id="lista-missoes">
 
-        <li class="missao" data-id="ler-projetos" data-valor="5" data-xp="50" data-progresso="100" data-status="completa">
+        <li id="m1" class="missao" data-id="ler-projetos" data-valor="5" data-xp="50" data-progresso="100" data-status="completa">
         <div class="missao-icone">📖</div>
         <div class='card'>
         <div>
@@ -52,12 +52,12 @@
         <div class="missao-rodape">
           <progress value="100" max="100"></progress>
           <span class="percentual">100%</span>
-          <button class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
+          <button id="btnm1" class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
         </div>
       </div>
       </li>
 
-      <li class="missao" data-id="ler-projetos" data-valor="8" data-xp="80" data-progresso="100" data-status="completa">
+      <li id="m2" class="missao" data-id="ler-projetos" data-valor="8" data-xp="80" data-progresso="100" data-status="completa">
         <div class="missao-icone">🔗</div>
         <div class='card'>
         <div>
@@ -68,12 +68,12 @@
         <div class="missao-rodape">
           <progress value="100" max="100"></progress>
           <span class="percentual">100%</span>
-          <button class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
+          <button id="btnm2" class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
         </div>
         </div>
       </li>
 
-      <li class="missao" data-id="ler-projetos" data-valor="15" data-xp="150" data-progresso="0" data-status="pendente">
+      <li id="m3" class="missao" data-id="ler-projetos" data-valor="15" data-xp="150" data-progresso="0" data-status="pendente">
         <div class="missao-icone">⚡</div>
         <div class='card'>
         <div>
@@ -84,12 +84,12 @@
         <div class="missao-rodape">
           <progress value="0" max="100"></progress>
           <span class="percentual">0%</span>
-          <button class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
+          <button id="btnm3" class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
         </div>
       </div>
       </li>
 
-      <li class="missao" data-id="ler-projetos" data-valor="3" data-xp="30" data-progresso="60" data-status="pendente">
+      <li id="m4" class="missao" data-id="ler-projetos" data-valor="3" data-xp="30" data-progresso="60" data-status="pendente">
         <div class="missao-icone">👤</div>
         <div class='card'>
         <div>
@@ -100,12 +100,12 @@
         <div class="missao-rodape">
           <progress value="60" max="100"></progress>
           <span class="percentual">60%</span>
-          <button class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
+          <button id="btnm4" class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
         </div>
         </div>
       </li>
 
-      <li class="missao" data-id="ler-projetos" data-valor="20" data-xp="200" data-progresso="0" data-status="pendente">
+      <li id="m5" class="missao" data-id="ler-projetos" data-valor="20" data-xp="200" data-progresso="0" data-status="pendente">
         <div class="missao-icone">🤝</div>
         <div class='card'>
         <div>
@@ -116,13 +116,13 @@
         <div class="missao-rodape">
           <progress value="0" max="100"></progress>
           <span class="percentual">0%</span>
-          <button class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
+          <button id="btnmm5" class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
         </div>
         </div>
       </li>
     </ul>
 
    </main>
-    
+    <script src="bonificacao.js"></script>
 </body>
 </html>
