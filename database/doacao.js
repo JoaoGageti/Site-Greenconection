@@ -191,11 +191,12 @@ cvvcartao.addEventListener("blur",()=>{
 })
     
 bttcartao.addEventListener("click",()=>{
-nomecartao.textContent="";
-numerocartao.textContent="";
-validadecartao.textContent="";
-cvvcartao.textContent="";
+nomecartao.value="";
+numerocartao.value="";
+validadecartao.value="";
+cvvcartao.value="";
 infopagamentocartao.textContent="Contribuição efetuada. Nossa equipe agradece a sua ajuda!";
+bttcartao.disabled = true;
 })
 
 nomeboleto.addEventListener("blur",()=>{
@@ -209,10 +210,11 @@ emailboleto.addEventListener("blur",()=>{
 })
 
 bttboleto.addEventListener("click",()=>{
-    nomeboleto.textContent.value="";
-    CPFboleto.textContent.value="";
-    emailboleto.textContent.value="";
+    nomeboleto.value="";
+    CPFboleto.value="";
+    emailboleto.value="";
     infopagamentoboleto.textContent="Boleto gerado, cheque seu email. Nossa equipe agradece sua ajuda!"
+    bttboleto.disabled = true;
 
 })
 
@@ -222,6 +224,4 @@ bttpix.addEventListener("click",()=>{
 
 })
 
-voltar.addEventListener("click", () => {
-  window.location.href = "green.html";
-});
+
