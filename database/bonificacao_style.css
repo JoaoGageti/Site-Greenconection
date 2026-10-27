@@ -40,6 +40,10 @@ html, body {
     font-size: 20px;
 }
 
+.btn-coletar:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
 
 .saldo
 {
