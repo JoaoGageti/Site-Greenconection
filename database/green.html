@@ -11,16 +11,14 @@
     <link rel="stylesheet" href="principal.css">
 </head>
 <body>
-
-<header class="cabecalho">
-       <h1 class="logo">🍃Green Connection</h1> 
-    <nav class="infos">
-         <button class="conta"><a href="login.html">Criar Conta</a></button>
-         <!--<button class="config"><a href="#">⚙️</a></button>-->
-    </nav>
-</header>
-<main class="container">
-    
+    <header class="cabecalho">
+         <h1 class="logo">🍃Green Connection</h1> 
+        <nav class="infos">
+            <button class="conta"><a href="login.html">Criar Conta</a></button>
+            <button class="config"><a href="sobre.html">&#9432</a></button>
+        </nav>
+   </header> 
+   <main class="container">
     <section class="realizacoes">
             <div class="alinha">
                 <p class="subname">GREEN CONNECTION</p>
@@ -33,7 +31,7 @@
                             <p class="tag">Infraestrutura</p>
                             <p class="ano">2024</p>
                     <div class="card-corpo1">
-                        <h3 class="titulo-card">Centro Comunitário Vila Nova</h3>
+                        <h3 class="titulo-card"><a href="projeto1.html">Centro Comunitário Vila Nova</a></h3>
                         <p>Revitalização de área urbana com foco em educação e cultura para jovens da comunidade local.</p>
                         <hr class="traço">
                         <div class="card-status">
@@ -47,7 +45,7 @@
                         <p class="tag">Habitação</p>
                         <p class="ano">2025</p>
                     <div class="card-corpo1">
-                        <h3 class="titulo-card">Habitação Sustentável</h3>
+                        <h3 class="titulo-card"><a href="projeto2.html">Habitação Sustentável</a></h3>
                         <p>Construção de 40 unidades habitacionais com tecnologia verde e baixo impacto ambiental.</p>
                         <hr class="traço">
                         <div class="card-status">
@@ -70,7 +68,7 @@
             <p class="apoie">Apoie a instituição</p>
             </div>
             
-            <a class="apoiar" href="doacao.html">Apoiar</a>
+            <button class="apoiar"><a href="doacao.html">Apoiar</a></button>
             <div class="bon1">
             <p class="nota">Doações dedutíveis no IR · Qualquer valor</p>
             </div>
@@ -85,88 +83,99 @@
             <!--<a href="#" class="allnt">Ver todas as notícias &#8594;</a>-->
         </div>
         <div class="cards">
+            <nav class="notice">
             <!-- Notícia 1 -->
-            <article class="card-not"  id="not1">
-                <div class="card-img" style="background-image: url('img/noticia1.jpg')">
-                    <span class="tag">Clima</span>
+            <article class="card"  id="not1">
+                <img src="https://images.unsplash.com/photo-1648305091163-bf27b779d47a?w=900&h=500&fit=crop&auto=format">
+                    <span class="tag">Institucional</span>
                     <span class="ano">15 out 2026</span>
-                </div>
-                <div class="card-corpo">
-                    <h3>Título da notícia sobre o clima</h3>
-                    <p>Resumo curto sobre o que a matéria aborda.</p>
+                <div class="card-corpo1">
+                    <h3>Fundação recebe prêmio nacional de impacto social 2025</h3>
+                    <p>Reconhecimento destaca as iniciativas de habitação e educação implementadas nos últimos três anos nas comunidades.</p>
+                     <hr class="traço">
                     <a href="noticia1.html" class="lernt" target="_blank">Ler matéria &#8594;</a>
                 </div>
             </article>
 
             <!-- Notícia 2 -->
-            <article class="card-not"  id="not2">
-                <div class="card-img" style="background-image: url('img/noticia2.jpg')">
-                    <span class="tag">Biodiversidade</span>
+            <article class="card"  id="not2">
+                <img src="https://images.unsplash.com/photo-1725203653093-3af9174d6bbe?w=900&h=500&fit=crop&auto=format">
+                    <span class="tag">Meio ambiente</span>
                     <span class="ano">12 out 2026</span>
-                </div>
-                <div class="card-corpo">
-                    <h3>Título da notícia sobre biodiversidade</h3>
-                    <p>Resumo curto sobre o que a matéria aborda.</p>
+                <div class="card-corpo1">
+                    <h3>Reflorestamento beneficia 12 municípios da região</h3>
+                    <p>Parceria com prefeituras vai plantar 50 mil mudas nativas ao longo do Rio Paranapanema, restaurando mata ciliar.</p>
+                    <br>
+                    <hr class="traço">
                     <a href="noticia2.html" class="lernt" target="_blank">Ler matéria &#8594;</a>
                 </div>
             </article>
 
             <!-- Notícia 3 -->
-            <article class="card-not"  id="not3">
-                <div class="card-img" style="background-image: url('img/noticia3.jpg')">
-                    <span class="tag">Reciclagem</span>
+            <article class="card"  id="not3">
+                <img src="https://images.unsplash.com/photo-1725203653086-b774ec111109?w=900&h=500&fit=crop&auto=format">
+                    <span class="tag">Educação</span>
                     <span class="ano">10 out 2026</span>
-                </div>
-                <div class="card-corpo">
-                    <h3>Título da notícia sobre reciclagem</h3>
-                    <p>Resumo curto sobre o que a matéria aborda.</p>
+                <div class="card-corpo1">
+                    <h3>Programa de bolsas amplia acesso ao ensino superior</h3>
+                    <p>Mais de 200 estudantes receberão suporte integral para ingresso e permanência na universidade em 2026.</p>
+                    <br>
+                    <hr class="traço">
                     <a href="noticia3.html" class="lernt" target="_blank">Ler matéria &#8594;</a>
                 </div>
             </article>
 
             <!-- Notícia 4 -->
-            <article class="card-not"  id="not4" hidden>
+            <article class="card"  id="not4" hidden>
+                
                 <div class="card-img" style="background-image: url('img/noticia4.jpg')">
-                    <span class="tag">Água</span>
+                    <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=900&h=500&fit=crop&auto=format">
+                    <span class="tag">Saúde</span>
                     <span class="ano">08 out 2026</span>
                 </div>
-                <div class="card-corpo">
-                    <h3>Título da notícia sobre água</h3>
-                    <p>Resumo curto sobre o que a matéria aborda.</p>
+                <div class="card-corpo1">
+                    <h3>Nova clínica itinerante levará saúde a comunidades rurais</h3>
+                    <p>Unidade móvel equipada com laboratório e telemedicina vai atender 3 mil pessoas por mês em regiões sem cobertura de UBS.</p>
+                    <hr class="traço">
                     <a href="noticia4.html" class="lernt" target="_blank">Ler matéria &#8594;</a>
                 </div>
             </article>
 
             <!-- Notícia 5 -->
-            <article class="card-not"  id="not5" hidden>
+            <article class="card"  id="not5" hidden>
                 <div class="card-img" style="background-image: url('img/noticia5.jpg')">
-                    <span class="tag">Energia</span>
+                    <img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?w=900&h=500&fit=crop&auto=format">
+                    <span class="tag">Empregabilidade</span>
                     <span class="ano">05 out 2026</span>
                 </div>
-                <div class="card-corpo">
-                    <h3>Título da notícia sobre energia</h3>
-                    <p>Resumo curto sobre o que a matéria aborda.</p>
+                <div class="card-corpo1">
+                    <h3>Parceria com setor privado vai criar 500 empregos em 2026</h3>
+                    <p>Acordo com consórcio de empresas regionais prevê qualificação profissional e inserção no mercado de trabalho para jovens em vulnerabilidade.</p>
+                    <hr class="traço">
                     <a href="noticia5.html" class="lernt" target="_blank">Ler matéria &#8594;</a>
                 </div>
             </article>
 
             <!--Notícia 6 -->
-            <article class="card-not" id="not6" hidden>
+            <article class="card" id="not6" hidden>
                 <div class="card-img" style="background-image: url('img/noticia6.jpg')">
-                    <span class="tag">Florestas</span>
+                    <img src="https://images.unsplash.com/photo-1544928938-6852c1925194?w=900&h=500&fit=crop&auto=format">
+                    <span class="tag">Cultura</span>
                     <span class="ano">02 out 2026</span>
                 </div>
-                <div class="card-corpo">
-                    <h3>Título da notícia sobre florestas</h3>
-                    <p>Resumo curto sobre o que a matéria aborda.</p>
+                <div class="card-corpo1">
+                    <h3>Festival cultural celebra 10 anos de projetos artísticos</h3>
+                    <p>Evento gratuito em três cidades reúne shows, exposições e oficinas produzidos por artistas formados nos programas da fundação.</p>
+                    <hr class="traço">
                     <a href="noticia6.html" class="lernt" target="_blank">Ler matéria &#8594;</a>
                 </div>
             </article>
+            </nav>
         </div>
 
         <div class="mais-menos">
-            <a id="bttmaisnoticias" class="crnt">Carregar mais notícias</a>
-            <a id="bttmenosnoticias" class="crnt" hidden>Ver menos</a>
+            <a href="#" id="bttmaisnoticias" class="crnt">Carregar mais notícias</a>
+            <a href="#" id="bttmenosnoticias" class="crnt" hidden>Ver menos</a>
         </div>
     </section>
 </main>

@@ -30,11 +30,11 @@ nome.addEventListener("input",() => {
 email.addEventListener("input",() => {
     if (regex.test(email.value)){
         emailvalidar=true;
-        emailcheck.textContent="Email Correto!"
+        emailcheck.textContent="\nEmail Correto!"
     }
     else{
         emailvalidar=false;
-        emailcheck.textContent="Email Incorreto!"
+        emailcheck.textContent="\nEmail Incorreto!"
     }
     if (nomevalidar===true && emailvalidar===true && senhavalidar===true ){
         loginbt.disabled = false;
@@ -49,11 +49,11 @@ senha.addEventListener("input",() => {
     
     if (senha.value.length >= 6){
         senhavalidar=true;
-        senhacheck.textContent="Senha Correta!"
+        senhacheck.textContent="\nSenha Correta!"
     }
     else{
         senhavalidar=false;
-        senhacheck.textContent="Senha Incorreto!"
+        senhacheck.textContent="\nSenha Incorreto!"
     }
     if (nomevalidar===true && emailvalidar===true && senhavalidar===true ){
         loginbt.disabled = false;
