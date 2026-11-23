@@ -1,0 +1,66 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* VARIÁVEIS */
+:root {
+    --cor-card: #ffff;
+    --cor-fundo: #f4f7f5;
+    --cor-fundo2: #ebebeb;
+    --cor-borda: #e3e6ee;
+    --cor-botao: #2D6A4F;
+    --cor-topopj:#2D6A4F;
+    --cor-escuro: #000;
+}
+
+/* TIPOGRAFIA GLOBAL */
+html, body {
+    font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif;
+    color: var(--cor-escuro);
+    background: var(--cor-fundo);
+    line-height: 1.5;
+    font-size: 1rem;
+    min-height: 100vh;  
+    
+}
+.tp{
+      display: flex;
+  align-items: center; 
+  gap: 15px;
+  background-color: #fff;
+  padding: 22px;       
+
+}
+.voltar{
+    color: var(--cor-botao);
+    font-weight: bold;
+    text-decoration: none;
+}
+.let{
+    color: rgba(36, 86, 59, 0.7);
+    font-size: 18px;
+}
+img {
+  width: 100%;       /* Ocupa toda a largura disponível */
+  height: 300px;     /* Defina a altura desejada para o seu container */
+  object-fit: cover; /* Mantém a proporção da imagem e preenche o espaço (pode cortar as bordas excedentes proporcionalmente) */
+  object-position: center; /* Centraliza o foco da imagem */
+}
+.categoria
+{
+    color: rgba(36, 86, 59, 0.7);
+    font-size: 15px;
+    margin-left: 12px;
+}
+.titulo{
+    margin-left: 12px;
+    font-size: 22px;
+    font-family: 'fraunces', georgia, serif;
+}
+.conteudo-noticia{
+    margin: 12px 20px;
+
+}
