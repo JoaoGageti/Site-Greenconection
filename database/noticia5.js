@@ -1,0 +1,1 @@
+localStorage.setItem("noticia5","1");

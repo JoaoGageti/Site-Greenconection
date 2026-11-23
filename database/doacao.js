@@ -1,4 +1,3 @@
-//const valor = document.getElementById ("valor");
 const outrovalor = document.getElementById ("outrovalor");
 const nomecartao = document.getElementById ("nomecartao");
 const numerocartao = document.getElementById ("numerocartao");
@@ -16,6 +15,8 @@ const infopagamentocartao = document.getElementById ("infopagamentocartao");
 const infopagamentoboleto = document.getElementById ("infopagamentoboleto");
 const infopagamentopix = document.getElementById ("infopagamentopix");
 const voltar = document.getElementById ("voltar");
+
+
 
 // variaveis auxiliares usadas dentro da function validarcartão
 let nomec;
@@ -43,15 +44,6 @@ let emailbli;
 let mensagem;
 let mensagem2;
 
-/*function algumvalor (){
-    if (valor.value !== "" || outrovalor.value !== "")
-    {
-        return true;
-    }
-    else{
-        return false;
-    }
-}*/ // melhorar depois
 
 function adicionarerrocartao() { // cria elemento caso houver erro
   const li = document.createElement('li');   
@@ -191,12 +183,13 @@ cvvcartao.addEventListener("blur",()=>{
 })
     
 bttcartao.addEventListener("click",()=>{
-nomecartao.value="";
-numerocartao.value="";
-validadecartao.value="";
-cvvcartao.value="";
-infopagamentocartao.textContent="Contribuição efetuada. Nossa equipe agradece a sua ajuda!";
-bttcartao.disabled = true;
+    nomecartao.value="";
+    numerocartao.value="";
+    validadecartao.value="";
+    cvvcartao.value="";
+    infopagamentocartao.textContent="Contribuição efetuada. Nossa equipe agradece a sua ajuda!";
+    bttcartao.disabled = true;
+    localStorage.setItem("contribuicao","1");
 })
 
 nomeboleto.addEventListener("blur",()=>{
@@ -215,12 +208,12 @@ bttboleto.addEventListener("click",()=>{
     emailboleto.value="";
     infopagamentoboleto.textContent="Boleto gerado, cheque seu email. Nossa equipe agradece sua ajuda!"
     bttboleto.disabled = true;
-
+    localStorage.setItem("contribuicao","1");
 })
 
 bttpix.addEventListener("click",()=>{
     infopagamentopix.textContent="Obrigado pelo apoio!"
-
+    localStorage.setItem("contribuicao","1");
 
 })
 
