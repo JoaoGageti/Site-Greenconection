@@ -14,6 +14,7 @@
     --cor-botao: #2D6A4F;
     --cor-topopj:#2D6A4F;
     --cor-escuro: #000;
+    --cor-vclaro: #6caf70;
 }
 
 /* TIPOGRAFIA GLOBAL */
@@ -35,6 +36,7 @@ html, body {
   grid-template-areas:
   "proj"
   "bon"
+  "aula"
   "not"
   ;
 }
@@ -187,6 +189,29 @@ html, body {
   font-weight: bold;
 }
 
+.infos{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 5px 0px 5px;
+  font-weight: 500;
+}
+
+.tag{
+  display: inline;
+  padding: 5px;
+  background: var(--cor-botao);
+  color: var(--cor-card);
+  border-radius: 8px;
+}
+
+.ano{
+  display: inline;
+  padding: 5px;
+  background: var(--cor-botao);
+  color: var(--cor-card);
+  border-radius: 8px;
+}
+
 /* bonificação */
 .coluna-apoio{
   grid-area:bon;
@@ -195,7 +220,6 @@ html, body {
   align-items: center;
   gap: 15px;
   padding: 15px;
-  border-bottom: 3px solid var(--cor-borda);
 
 }
 
@@ -257,6 +281,30 @@ html, body {
   font-size: 1rem;
 }
 
+.aulas{
+  grid-area: aula;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+   border-bottom: 3px solid var(--cor-borda);
+}
+
+.tarefas{
+  padding: 14px 50px;
+  border-radius: 15px;
+  border: none;
+  background-color: var(--cor-botao);  
+  font-family: 'fraunces', georgia, serif;
+  cursor: pointer;
+  font-style: bold;
+  font-size: 16px;
+}
+
+.tarefas a{
+  color: var(--cor-card);
+}
+
+
 .noticias{
   grid-area: not;
   padding: 40px 20px;
@@ -266,6 +314,7 @@ html, body {
   gap: 25px;
   height: max-content;
 }
+
 
 .lernt a{
   color: var(--cor-botao);
@@ -319,17 +368,25 @@ html, body {
   .coluna-apoio{
   padding-top: 90px;
 }
+
+.tarefas{
+  padding: 14px 60px;
+  font-size: 18px;
+}
 }
 
-@media only screen and (min-width:1120px){
+
+@media only screen and (min-width:1155px){
   .container{
   display: grid; 
   grid-template-columns: 3fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
   "proj    bon"
+  "aula    aula"
   "not     not"
 }
+
  .coluna-apoio{
   padding-top: 150px;
  }
@@ -348,10 +405,6 @@ html, body {
 
   }
 
-.realizacoes{
-    border-bottom: 3px solid var(--cor-borda);
- 
-  }
   .pjc 
 {
   font-family: 'fraunces', georgia, serif;
@@ -373,6 +426,10 @@ html, body {
   grid-template-columns: repeat(3, 1fr); 
   gap: 20px; 
   align-items: stretch; 
+}
+
+.texto{
+  min-height: 50px;
 }
 
 }
