@@ -12,111 +12,120 @@
 <body>
 
     <header class="topo">
-    <div class="topo-conteudo">
-      <a class='boton' href="green.html" id="btn-voltar">← Voltar </a>
-      <p>|</p>
-      <h1 class="let">Central de Bônus</h1>
-    </div>
-    <hr>
-  </header>
-  <br>
-   <main>
-    <section class="saldo">
-      <nav class="text">
-    <p class="tsp"><small>SEU SALDO DE BÔNUS</small></p>
-    <div>
-        <div class="let" id="saldo-valor">R$ <span id="saldo" >0,00</span></div>
-        <span class='tsp' id="contador-missoes">0/5 missões</span>
-    </div>
-     <div class="progresso-geral">
-        <div class="linha-progresso">
-          <span class="tsp">Progresso missões</span>
-          <span class="tsp" id="progresso-geral-texto">0%</span>
-        </div>
-        <progress id="progresso-geral-barra" value="0" max="100"></progress>
+      <div class="topo-conteudo">
+        <a class='boton' href="green.html" id="btn-voltar">← Voltar </a>
+        <p>|</p>
+        <h1 id="titulo">Central de Bônus</h1>
       </div>
-      </nav>
-    </section>
+     <hr>
+    </header>
 
-    <h2 class="titulo-missoes">&#8212 Missões Disponíveis</h2>
+   <main class="container">
+      <nav class="saldo-total">
+        <div class="valores">
+        <p class="tsp"><small>SEU SALDO DE BÔNUS</small></p>
+          <div class="let" id="saldo-valor">R$ <span id="saldo" >0,00</span></div>
+          <span class='tsp' id="contador-missoes">0/5 missões</span>
+        </div>
+        <div class="progresso">
+          <div class="linha-progresso">
+           <span class="tsp">Progresso missões</span>
+            <span class="tsp" id="progresso-geral-texto">0%</span>
+          </div>
+            <progress id="progresso-geral-barra" value="0" max="100"></progress>
+        </div>
+      </nav>
+
+    
+    <h2 class="titulo-missoes">&#8212 MISSÕES DISPONÍVEIS</h2>
     <ul class="lista-missoes" id="lista-missoes">
 
-        <li id="m1" class="missao" data-id="ler-projetos" data-valor="5" data-xp="50" data-progresso="0" data-status="pendente">
-        <div class="missao-icone">📖</div>
-        <div class='card'>
-        <div>
-          <h3 class="let1">Leia sobre 2 projetos</h3>
-          <p class="text1">Acesse a página de detalhes de ao menos dois projetos.</p>
-        </div>
-        <div class="recompensa"><strong>R$ 5,00 </strong> <span> + 50 XP</span></div>
-        <div class="missao-rodape">
-          <progress id="progressoM1" value="0" max="100"></progress>
-          <span id="txtprogressoM1" class="percentual">0%</span>
-          <button id="btnm1" class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
-        </div>
-      </div>
+        <li id="m1" class="missao" data-id="ler-projetos" data-valor="5" data-xp="50" data-progresso="100" data-status="completa">
+          <div class="missao-icone"><span class="icone">📖</span></div>
+          <div class="descricao">
+            <div class="dados">
+              <div class="texto">
+                <h3 class="let1">Leia sobre 2 projetos</h3>
+                <p class="text1">Acesse a página de detalhes de ao menos dois projetos.</p>
+              </div>
+              <p class="recompensa"><strong>R$ 5,00 </strong> <span> + 50 XP</span></p>
+            </div>
+              <div class="missao-rodape">
+                <progress class="progress-card" value="100" max="100"></progress>
+                <span class="percentual">100%</span>
+                <button id="btnm1" class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
+              </div>
+          </div>
       </li>
 
-      <li id="m2" class="missao" data-id="ler-projetos" data-valor="8" data-xp="80" data-progresso="100" data-status="pendente">
-        <div class="missao-icone">🔗</div>
-        <div class='card'>
-        <div>
+      <li id="m2" class="missao" data-id="ler-projetos" data-valor="8" data-xp="80" data-progresso="100" data-status="completa">
+        <div class="missao-icone"><span class="icone">🔗</span></div>
+        <div class="descricao">
+        <div class="dados">
+          <div class="texto">
           <h3 class="let1">Compartilhe uma notícia</h3>
           <p class="text1">Compartilhe qualquer notícia da fundação nas redes sociais.</p>
         </div>
-        <div class="recompensa"><strong>R$ 8,00 </strong> <span> + 80 XP</span></div>
+        <p class="recompensa"><strong>R$ 8,00 </strong> <span> + 80 XP</span></p>
+        </div>
         <div class="missao-rodape">
-          <progress id="progressoM2" value="0" max="100"></progress>
-          <span id="txtprogressoM2" class="percentual">0%</span>
+          <progress class="progress-card" value="100" max="100"></progress>
+          <span class="percentual">100%</span>
           <button id="btnm2" class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
         </div>
         </div>
       </li>
 
       <li id="m3" class="missao" data-id="ler-projetos" data-valor="15" data-xp="150" data-progresso="0" data-status="pendente">
-        <div class="missao-icone">⚡</div>
-        <div class='card'>
-        <div>
-       <h3 class="let1">Faça sua contribuição</h3>
+        <div class="missao-icone"><span class="icone">⚡</span></div>
+        <div class="descricao">
+         <div class="dados">
+          <div class="texto">
+          <h3 class="let1">Faça sua contribuição</h3>
           <p class="text1">Realize uma doação de qualquer valor para um dos projetos ativos.</p>
-        </div>
+         </div>
         <div class="recompensa"><strong>R$ 15,00 </strong> <span> + 150 XP</span></div>
+        </div>
         <div class="missao-rodape">
-          <progress id="progressoM3" value="0" max="100"></progress>
-          <span id="txtprogressoM3" class="percentual">0%</span>
+          <progress class="progress-card" value="0" max="100"></progress>
+          <span class="percentual">0%</span>
           <button id="btnm3" class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
         </div>
       </div>
       </li>
 
       <li id="m4" class="missao" data-id="ler-projetos" data-valor="3" data-xp="30" data-progresso="60" data-status="pendente">
-        <div class="missao-icone">👤</div>
-        <div class='card'>
-        <div>
-        <h3 class="let1">Complete seu perfil</h3>
-          <p class="text1">Preencha 100% das informações do seu perfil de usuário.</p>
+        <div class="missao-icone"><span class="icone">👤</span></div>
+        <div class="descricao">
+        <div class="dados">
+          <div class="texto">
+           <h3 class="let1">Complete seu perfil</h3>
+           <p class="text1">Preencha 100% das informações do seu perfil de usuário.</p>
         </div>
-        <div class="recompensa"><strong>R$ 3,00 </strong> <span> + 30 XP</span></div>
+        <p class="recompensa"><strong>R$ 3,00 </strong> <span> + 30 XP</span></p>
+        </div>
         <div class="missao-rodape">
-          <progress id="progressoM4" value="0" max="100"></progress>
-          <span id="txtprogressoM4" class="percentual">0%</span>
+          <progress class="progress-card" value="60" max="100"></progress>
+          <span class="percentual">60%</span>
           <button id="btnm4" class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
         </div>
         </div>
       </li>
 
       <li id="m5" class="missao" data-id="ler-projetos" data-valor="20" data-xp="200" data-progresso="0" data-status="pendente">
-        <div class="missao-icone">🤝</div>
-        <div class='card'>
-        <div>
-        <h3 class="let1">Indique um amigo</h3>
+        <div class="missao-icone"> <span class="icone"></span>🤝</div>
+        <div class="descricao">
+        <div class="dados">
+          <div class="texto">
+          <h3 class="let1">Indique um amigo</h3>
           <p class="text1">Convide um amigo para a plataforma e ele deve se cadastrar.</p>
         </div>
-        <div class="recompensa"><strong>R$ 20,00 </strong> <span> + 200 XP</span></div>
+        <p class="recompensa"><strong>R$ 20,00 </strong> <span> + 200 XP</span></p>
+        </div>
         <div class="missao-rodape">
-          <progress id="progressoM5" value="0" max="100"></progress>
-          <span id="txtprogressoM5" class="percentual">0%</span>
-          <button id="btnm5" class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
+          <progress class="progress-card" value="0" max="100"></progress>
+          <span class="percentual">0%</span>
+          <button id="btnmm5" class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
         </div>
         </div>
       </li>
