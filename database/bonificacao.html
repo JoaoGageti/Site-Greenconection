@@ -40,7 +40,7 @@
     <h2 class="titulo-missoes">&#8212 MISSÕES DISPONÍVEIS</h2>
     <ul class="lista-missoes" id="lista-missoes">
 
-        <li id="m1" class="missao" data-id="ler-projetos" data-valor="5" data-xp="50" data-progresso="100" data-status="completa">
+        <li id="m1" class="missao" data-id="ler-projetos" data-valor="5" data-xp="50" data-progresso="100" data-status="pendente">
           <div class="missao-icone"><span class="icone">📖</span></div>
           <div class="descricao">
             <div class="dados">
@@ -51,14 +51,14 @@
               <p class="recompensa"><strong>R$ 5,00 </strong> <span> + 50 XP</span></p>
             </div>
               <div class="missao-rodape">
-                <progress class="progress-card" value="100" max="100"></progress>
-                <span class="percentual">100%</span>
+                <progress id="progressoM1" class="progress-card" value="0" max="100"></progress>
+                <span id="txtprogressoM1" class="percentual">0%</span>
                 <button id="btnm1" class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
               </div>
           </div>
       </li>
 
-      <li id="m2" class="missao" data-id="ler-projetos" data-valor="8" data-xp="80" data-progresso="100" data-status="completa">
+      <li id="m2" class="missao" data-id="ler-projetos" data-valor="8" data-xp="80" data-progresso="100" data-status="pendente">
         <div class="missao-icone"><span class="icone">🔗</span></div>
         <div class="descricao">
         <div class="dados">
@@ -69,8 +69,8 @@
         <p class="recompensa"><strong>R$ 8,00 </strong> <span> + 80 XP</span></p>
         </div>
         <div class="missao-rodape">
-          <progress class="progress-card" value="100" max="100"></progress>
-          <span class="percentual">100%</span>
+          <progress id="progressoM2" class="progress-card" value="0" max="100"></progress>
+          <span id="txtprogressoM2" class="percentual">0%</span>
           <button id="btnm2" class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
         </div>
         </div>
@@ -87,8 +87,8 @@
         <div class="recompensa"><strong>R$ 15,00 </strong> <span> + 150 XP</span></div>
         </div>
         <div class="missao-rodape">
-          <progress class="progress-card" value="0" max="100"></progress>
-          <span class="percentual">0%</span>
+          <progress id="progressoM3" class="progress-card" value="0" max="100"></progress>
+          <span id="txtprogressoM3" class="percentual">0%</span>
           <button id="btnm3" class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
         </div>
       </div>
@@ -105,8 +105,8 @@
         <p class="recompensa"><strong>R$ 3,00 </strong> <span> + 30 XP</span></p>
         </div>
         <div class="missao-rodape">
-          <progress class="progress-card" value="60" max="100"></progress>
-          <span class="percentual">60%</span>
+          <progress id="progressoM4" class="progress-card" value="60" max="100"></progress>
+          <span id="txtprogressoM4" class="percentual">60%</span>
           <button id="btnm4" class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
         </div>
         </div>
@@ -123,9 +123,9 @@
         <p class="recompensa"><strong>R$ 20,00 </strong> <span> + 200 XP</span></p>
         </div>
         <div class="missao-rodape">
-          <progress class="progress-card" value="0" max="100"></progress>
-          <span class="percentual">0%</span>
-          <button id="btnmm5" class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
+          <progress id="progressoM5" class="progress-card" value="0" max="100"></progress>
+          <span id="txtprogressoM5" class="percentual">0%</span>
+          <button id="btnm5" class="btn-coletar" type="button"> ⚡ Recolher Bônus</button>
         </div>
         </div>
       </li>
