@@ -53,7 +53,7 @@ senha.addEventListener("input",() => {
     }
     else{
         senhavalidar=false;
-        senhacheck.textContent="\nSenha Incorreto!"
+        senhacheck.textContent="\nSenha Incorreta!"
     }
     if (nomevalidar===true && emailvalidar===true && senhavalidar===true ){
         loginbt.disabled = false;

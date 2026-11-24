@@ -112,6 +112,7 @@ html, body {
   padding: 5px 0px;  
   width: 100%;      
   font-size: 18px;
+  font-family: 'fraunces', georgia, serif;
 }
 .acoes
 {
@@ -140,6 +141,7 @@ html, body {
   letter-spacing: 2px;              /* Espaçamento elegante entre as letras */
   background-color: var(--cor-botao);
   border: none;
+  font-family: 'fraunces', georgia, serif;
     
 }
 
