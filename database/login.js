@@ -1,7 +1,7 @@
 const nome = document.getElementById ("nome");
 const email = document.getElementById ("email");
 const senha = document.getElementById ("senha");
-const loginbt = document.getElementById ("loginbt");
+const loginbtn = document.getElementById ("loginbtn");
 const emailcheck = document.getElementById ("emailcheck");
 const senhacheck = document.getElementById ("senhacheck");
 const loginresposta = document.getElementById ("loginresposta");
@@ -10,6 +10,10 @@ let emailvalidar;
 let senhavalidar;
 const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+const formulario = document.getElementById("formulario");
+const logado = document.getElementById("logado");
+
+const logoutbt = document.getElementById("logoutbt");
 
 nome.addEventListener("input",() => {
     if (nome.value!=="" ){
@@ -18,13 +22,7 @@ nome.addEventListener("input",() => {
     else{
         nomevalidar=false;
     }
-    if (nomevalidar===true && emailvalidar===true && senhavalidar===true ){
-        loginbt.disabled = false;
-    }
-    else{
-        loginbt.disabled = true;
-    }
-    loginresposta.textContent="";
+    liberarbtn();
 })
 
 email.addEventListener("input",() => {
@@ -36,13 +34,7 @@ email.addEventListener("input",() => {
         emailvalidar=false;
         emailcheck.textContent="\nEmail Incorreto!"
     }
-    if (nomevalidar===true && emailvalidar===true && senhavalidar===true ){
-        loginbt.disabled = false;
-    }
-    else{
-        loginbt.disabled = true;
-    }
-    loginresposta.textContent="";
+    liberarbtn();
 })
 
 senha.addEventListener("input",() => {
@@ -55,21 +47,50 @@ senha.addEventListener("input",() => {
         senhavalidar=false;
         senhacheck.textContent="\nSenha Incorreta!"
     }
-    if (nomevalidar===true && emailvalidar===true && senhavalidar===true ){
-        loginbt.disabled = false;
-    }
-    else{
-        loginbt.disabled = true;
-    }
-    loginresposta.textContent="";
+    liberarbtn();
 })
 
-loginbt.addEventListener("click", () =>{
+function liberarbtn() {
+    if(nomevalidar===true && emailvalidar===true && senhavalidar===true){
+        loginbtn.disabled=false;
+    }
+    else{
+        loginbtn.disabled=true;
+    }
+    loginresposta.textContent = "";
+}
+
+loginbtn.addEventListener("click", () =>{
+    localStorage.setItem("nick",nome.value);
+    localStorage.setItem("conta","criada");
     nome.value="";
     email.value="";
     senha.value="";
     emailcheck.textContent="";
     senhacheck.textContent="";
     loginresposta.textContent="Conta criada com sucesso!";
+    nomevalidar = false;
+    emailvalidar = false;
+    senhavalidar = false;
+    loginbtn.disabled = true;
+    logout();
+})
 
+function logout(){
+if (localStorage.getItem("conta") === "criada") {
+    formulario.hidden = true;
+    logado.hidden = false;
+}
+else {
+    formulario.hidden = false;
+    logado.hidden = true;
+}}
+
+logout();
+
+logoutbtn.addEventListener("click", () => {
+    localStorage.removeItem("nick");
+    localStorage.removeItem("conta");
+    loginresposta.textContent = "";
+    logout();
 })
