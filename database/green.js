@@ -3,7 +3,10 @@ const bttmenosnoticias = document.getElementById("bttmenosnoticias");
 const not4 = document.getElementById("not4");
 const not5 = document.getElementById("not5");
 const not6 = document.getElementById("not6");
+const txtcriarconta = document.getElementById("txtcriarconta");
 
+let nick = localStorage.getItem("nick");
+let conta = localStorage.getItem("conta");
 
 bttmaisnoticias.addEventListener("click", () =>{ // quando o btoão é clicado aparece as outras notícias
  bttmaisnoticias.hidden = true;
@@ -20,3 +23,10 @@ bttmenosnoticias.addEventListener("click", () =>{ // quando o btoão é clicado 
  not5.hidden = true;
  not6.hidden = true; 
 }) 
+
+if(conta==="criada"){
+    txtcriarconta.textContent=nick;
+}
+else{
+    txtcriarconta.textContent="Criar Conta";
+}
