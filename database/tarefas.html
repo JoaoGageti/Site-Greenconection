@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas e Aulas</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tarefas.css">
+</head>
+<body>
+   <header class="topo">
+      <div class="topo-conteudo">
+        <a class='boton' href="green.html" id="btn-voltar">← Voltar </a>
+        <p>|</p>
+        <h1 id="titulo">Tarefas e Aulas</h1>
+      </div>
+     <hr>
+    </header> 
+    <main class="container"> 
+        <h2 class="titulo-aulas">&#8212 EDUCAÇÃO AMBIENTAL</h2>
+         <section class="cards">
+            <article class="card">
+                <div class="infos">
+                    <div class="classificacao">
+                        <span class="tipo">Recursos Hídricos</span> 
+                        <span class="nivel1">Iniciante</span>
+                    </div>
+                    <span class="icone">&#10003</span>
+                </div>
+                <h3 class="titulo-card"> O Ciclo da Água</h3>
+                <p>Entenda como a água se move pela atmosfera, solo e oceanos — e por que isso é essencial para toda a vida na Terra.</p>
+                <div class="infos">
+                    <div class="classificacao">
+                        <span class="tempo">&#9654 6 min</span> 
+                        <span class="XP">+30 XP </span>
+                    </div>
+                    <span class="status">&#10003 Concluída</span>
+                </div>
+            </article>
+            <article class="card">
+                <div class="infos">
+                    <div class="classificacao">
+                        <span class="tipo">Florestas</span> 
+                        <span class="nivel1">Iniciante</span>
+                    </div>
+                    <span class="icone">&#10003</span>
+                </div>
+                <h3 class="titulo-card">Desmatamento e Biodiversidade</h3>
+                <p>Explore as causas do desmatamento global e seus efeitos em cadeia sobre espécies, clima e comunidades humanas.</p>
+                <div class="infos">
+                    <div class="classificacao">
+                        <span class="tempo">&#9654 9 min</span> 
+                        <span class="XP">+40 XP </span>
+                    </div>
+                    <span class="status">&#10003 Concluída</span>
+                </div>
+            </article>
+            <article class="card">
+                <div class="infos">
+                    <div class="classificacao">
+                        <span class="tipo">Clima</span> 
+                        <span class="nivel2">Intermediário</span>
+                    </div>
+                    <span class="icone"></span>
+                </div>
+                <h3 class="titulo-card">Efeito Estufa e Aquecimento Global</h3>
+                <p>Como gases de efeito estufa alteram o balanço energético do planeta e o que os dados científicos nos mostram.</p>
+                <div class="infos">
+                    <div class="classificacao">
+                        <span class="tempo">&#9654 10 min</span> 
+                        <span class="XP">+50 XP </span>
+                    </div>
+                    <span class="status">&#9654 Iniciar Aula</span>
+                </div>
+            </article>
+            <article class="card">
+                <div class="infos">
+                    <div class="classificacao">
+                        <span class="tipo">Energia</span> 
+                        <span class="nivel1">Iniciante</span>
+                    </div>
+                    <span class="icone">&#128274</span>
+                </div>
+                <h3 class="titulo-card"> Energias Renováveis no Brasil</h3>
+                <p>Solar, eólica, hidráulica e biomassa: conheça a matriz energética brasileira e as oportunidades de expansão limpa.</p>
+                <div class="infos">
+                    <div class="classificacao">
+                        <span class="tempo">&#9654 8 min</span> 
+                        <span class="XP">+40 XP </span>
+                    </div>
+                    <span class="status">Bloqueada</span>
+                </div>
+            </article>
+            <article class="card">
+                <div class="infos">
+                    <div class="classificacao">
+                        <span class="tipo">Consumo</span> 
+                        <span class="nivel1">Iniciante</span>
+                    </div>
+                    <span class="icone">&#128274</span>
+                </div>
+                <h3 class="titulo-card">Gestão de Resíduos Sólidos</h3>
+                <p>Coleta seletiva, reciclagem e compostagem: como suas escolhas diárias reduzem pressão sobre aterros e oceanos.</p>
+                <div class="infos">
+                    <div class="classificacao">
+                        <span class="tempo">&#9654 7 min</span> 
+                        <span class="XP">+35 XP </span>
+                    </div>
+                    <span class="status">Bloqueada</span>
+                </div>
+            </article>
+            <article class="card">
+                <div class="infos">
+                    <div class="classificacao">
+                        <span class="tipo"> Ecossistemas</span> 
+                        <span class="nivel3">Avançado</span>
+                    </div>
+                    <span class="icone">&#128274</span>
+                </div>
+                <h3 class="titulo-card"> Biomas Brasileiros em Risco</h3>
+                <p>Cerrado, Mata Atlântica, Pantanal, Amazônia: a singularidade de cada bioma e as principais ameaças atuais.</p>
+                <div class="infos">
+                    <div class="classificacao">
+                        <span class="tempo">&#9654 12 min</span> 
+                        <span class="XP">+60 XP </span>
+                    </div>
+                    <span class="status">Bloqueada</span>
+                </div>
+            </article>
+            <article class="progresso">
+                <div class="infos">
+                    <h3 class="titulo-card"> Progresso das aulas</h3> 
+                    <span class="icone">2/6</span>
+                </div>
+                <progress id="progresso-geral-barra" class="progress-card" value="2" max="6"></progress>
+                <p>Complete todas as aulas para desbloquear missões avançadas e bônus exclusivos. </p>
+            </article>
+        </section>
+    </main>
+
+
+
+
+
+</body>
+</html>
