@@ -8,7 +8,7 @@ Como uma forma de incentivo, o aplicativo possuirá um mecanismo de bonificaçã
 ## Estrutura do Projeto
 - Assets: Pasta destinada aos recursos utilizados pelo projeto, como imagens, ícones, fontes e outros elementos visuais necessários para a interface do site.
 - Config: Contém arquivos relacionados às configurações do projeto. Esses arquivos podem armazenar informações necessárias para definir o funcionamento e a configuração de determinados recursos da aplicação.
-- Database: Pasta destinada aos arquivos relacionados ao banco de dados do projeto, incluindo sua estrutura, informações e possíveis configurações necessárias para o armazenamento dos dados dos usuários e da aplicação.
+- Database: Pasta destinada aos arquivos relacionados aos códigos do projeto, incluindo sua estrutura, informações e possíveis configurações necessárias para o armazenamento dos dados dos usuários e da aplicação.
 - Docs: Reúne a documentação do projeto, contendo arquivos e informações importantes para explicar o desenvolvimento, funcionamento e organização da aplicação.
 - Scripts: Armazena scripts auxiliares utilizados durante o desenvolvimento e execução do projeto, facilitando tarefas repetitivas e processos de configuração.
 - Src: É a pasta principal do código-fonte da aplicação. Nela ficam os arquivos responsáveis pelo desenvolvimento do site e suas principais funcionalidades.
